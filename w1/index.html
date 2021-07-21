@@ -17,12 +17,18 @@
     var a  = "a";
     var b = 2;
     var c = true;
+    var Array = [100];
 
     console.log("a: " + typeof(a));
     console.log("b: " + typeof(b));
     console.log("c: " + typeof(c));
 
     console.log("5 + 2=" + add(5, 2));
+
+    for (let i = 0; i < 100; i++)
+    {
+        Array[i] = i + 1;
+    }
 
     function add(a, b)
     {
