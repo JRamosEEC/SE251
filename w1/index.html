@@ -43,24 +43,21 @@
     {
         if(Array[i]%2 == 0 && Array[i]%3 == 0)
         {
-            console.log(i + ": fizz buzz");
+            Array[i] = "fizz buzz";
         }
 
         else if(Array[i]%3 == 0)
         {
-            console.log(i + ": buzz");
+            Array[i] = "buzz";
         }
 
         else if(Array[i]%2 == 0)
         {
-            console.log(i + ": fizz");
-        }
-
-        else
-        {
-            console.log(i + ": " + Array[i]);
+            Array[i] = "fizz";
         }
     }
+
+    console.log(Array);
 
 </script>
 
