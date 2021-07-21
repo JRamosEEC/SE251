@@ -18,6 +18,7 @@
     var b = 2;
     var c = true;
     var Array = new Array(100);
+    const ObjArray = new Array(100);
 
     function add(a, b)
     {
@@ -59,30 +60,30 @@
 
     console.log(Array);
 
-    for (let i = 0; i < Array.length; i++)
+    for (let i = 0; i < ObjArray.length; i++)
     {
-        if(Array[i]%2 == 0 && Array[i]%3 == 0)
+        if(ObjArray[i]%2 == 0 && ObjArray[i]%3 == 0)
         {
-            Array[i] = {index:Array[i], model:"fizz buzz"};
+            ObjArray[i] = {index:ObjArray[i], label:"fizz buzz"};
         }
 
         else if(Array[i]%3 == 0)
         {
-            Array[i] = {index:Array[i], model:"buzz"};
+            ObjArray[i] = {index:ObjArray[i], label:"buzz"};
         }
 
-        else if(Array[i]%2 == 0)
+        else if(ObjArray[i]%2 == 0)
         {
-            Array[i] = {index:Array[i], model:"fizz"};
+            ObjArray[i] = {index:ObjArray[i], label:"fizz"};
         }
 
         else
         {
-            Array[i] = {index:Array[i]};
+            ObjArray[i] = {label:ObjArray[i]};
         }
     }
 
-    console.log(Array);
+    console.log(ObjArray);
 
 </script>
 
