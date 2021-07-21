@@ -59,6 +59,31 @@
 
     console.log(Array);
 
+    for (let i = 0; i < Array.length; i++)
+    {
+        if(Array[i]%2 == 0 && Array[i]%3 == 0)
+        {
+            Array[i] = {index:Array[i], model:"fizz buzz"};
+        }
+
+        else if(Array[i]%3 == 0)
+        {
+            Array[i] = {index:Array[i], model:"buzz"};
+        }
+
+        else if(Array[i]%2 == 0)
+        {
+            Array[i] = {index:Array[i], model:"fizz"};
+        }
+
+        else
+        {
+            Array[i] = {index:Array[i]};
+        }
+    }
+
+    console.log(Array);
+
 </script>
 
 </html>
