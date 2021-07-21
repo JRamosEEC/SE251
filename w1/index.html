@@ -19,6 +19,13 @@
     var c = true;
     var Array = new Array(100);
 
+    function add(a, b)
+    {
+        var sum;
+        sum = a + b;
+        return sum;
+    }
+
     console.log("a: " + typeof(a));
     console.log("b: " + typeof(b));
     console.log("c: " + typeof(c));
@@ -32,12 +39,29 @@
 
     console.log(Array);
 
-    function add(a, b)
+    for (let i = 0; i < Array.length; i++)
     {
-        var sum;
-        sum = a + b;
-        return sum;
+        if(Array[i]%2 == 0)
+        {
+            console.log("fizz");
+        }
+
+        else if(Array[i]%3 == 0)
+        {
+            console.log("buzz");
+        }
+
+        else if(Array[i]%2 == 0 && Array[i]%3 == 0)
+        {
+            console.log("fizz buzz");
+        }
+
+        else
+        {
+            console.log(Array[i]);
+        }
     }
+
 </script>
 
 </html>
