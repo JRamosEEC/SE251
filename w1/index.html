@@ -39,9 +39,9 @@
 
     console.log(Array);
 
-    for (Array[i]%2 == 0 && Array[i]%3 == 0)
+    for (let i = 0; i < Array.length; i++)
     {
-        if(Array[i]%2 == 0)
+        if(Array[i]%2 == 0 && Array[i]%3 == 0)
         {
             console.log(i + ": fizz buzz");
         }
@@ -51,7 +51,7 @@
             console.log(i + ": buzz");
         }
 
-        else if(let i = 0; i < Array.length; i++ )
+        else if(Array[i]%2 == 0)
         {
             console.log(i + ": fizz");
         }
