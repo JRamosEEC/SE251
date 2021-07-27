@@ -17,7 +17,6 @@
     var a  = "a";
     var b = 2;
     var c = true;
-    var Array = new Array(100);
 
     function add(a, b)
     {
@@ -32,32 +31,39 @@
 
     console.log("5 + 2=" + add(5, 2));
 
-    for (let i = 0; i < 100; i++)
+    if (true)
     {
-        Array[i] = i + 1;
+        var Array = new Array(100);
+
+        for (let i = 0; i < 100; i++)
+        {
+            Array[i] = i + 1;
+        }
+
+        console.log(Array);
+
+        for (let i = 0; i < Array.length; i++)
+        {
+            if(Array[i]%2 == 0 && Array[i]%3 == 0)
+            {
+                Array[i] = "fizz buzz";
+            }
+
+            else if(Array[i]%3 == 0)
+            {
+                Array[i] = "buzz";
+            }
+
+            else if(Array[i]%2 == 0)
+            {
+                Array[i] = "fizz";
+            }
+        }
+
+        console.log(Array);
     }
 
-    console.log(Array);
-
-    for (let i = 0; i < Array.length; i++)
-    {
-        if(Array[i]%2 == 0 && Array[i]%3 == 0)
-        {
-            Array[i] = "fizz buzz";
-        }
-
-        else if(Array[i]%3 == 0)
-        {
-            Array[i] = "buzz";
-        }
-
-        else if(Array[i]%2 == 0)
-        {
-            Array[i] = "fizz";
-        }
-    }
-
-    console.log(Array);
+    var Array = new Array(100);
 
     for (let i = 0; i < Array.length; i++)
     {
@@ -82,7 +88,7 @@
         }
     }
 
-    console.log(Array[1].label);
+    console.log(Array);
 
 </script>
 
