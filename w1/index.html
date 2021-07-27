@@ -106,6 +106,27 @@
         }
     }
 
+    for (let i = 0; i < Array.length; i++)
+    {
+        for (x in Array[i])
+        {
+            if (x == "label")
+            {
+                console.log(Array[i].label);
+            }
+
+            else if (x == "index")
+            {
+                console.log(Array[i].index);
+            }
+
+            else
+            {
+                console.log("Undefined");
+            }
+        }
+    }
+
 </script>
 
 </html>
