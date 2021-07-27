@@ -70,7 +70,28 @@
         Array.push(i + 1);
     }
 
+    for (let i = 0; i < Array.length; i++)
+    {
+        if(Array[i]%2 == 0 && Array[i]%3 == 0)
+        {
+            Array[i] = ({index:Array[i], label:"fizz buzz"});
+        }
 
+        else if(Array[i]%3 == 0)
+        {
+            Array[i] = ({index:Array[i], label:"buzz"});
+        }
+
+        else if(Array[i]%2 == 0)
+        {
+            Array[i] = ({index:Array[i], label:"fizz"});
+        }
+
+        else
+        {
+            Array[i] = ({index:Array[i]});
+        }
+    }
     
     console.log(Array);
 
