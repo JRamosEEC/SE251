@@ -95,6 +95,17 @@
     
     console.log(Array);
 
+    for (let i = 0; i < Array.length; i++)
+    {
+        if(Array[i].hasOwnProperty("label"))
+        {
+            if(Array[i].label == "fizz")
+            {
+                console.log(Array[i]);
+            }
+        }
+    }
+
 </script>
 
 </html>
