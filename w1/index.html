@@ -74,22 +74,22 @@
     {
         if(Array[i]%2 == 0 && Array[i]%3 == 0)
         {
-            Array.push({index:Array[i], label:"fizz buzz"});
+            Array[i] = ({index:Array[i], label:"fizz buzz"});
         }
 
         else if(Array[i]%3 == 0)
         {
-            Array.push({index:Array[i], label:"buzz"});
+            Array[i] = ({index:Array[i], label:"buzz"});
         }
 
         else if(Array[i]%2 == 0)
         {
-            Array.push({index:Array[i], label:"fizz"});
+            Array[i] = ({index:Array[i], label:"fizz"});
         }
 
         else
         {
-            Array.push({index:Array[i]});
+            Array[i] = ({index:Array[i]});
         }
     }
     
