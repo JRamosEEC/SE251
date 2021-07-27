@@ -63,31 +63,36 @@
         console.log(Array);
     }
 
-    var Array = new Array(100);
+    var Array = [];
+
+    for (let i = 0; i < 100; i++)
+    {
+        Array.push(i + 1);
+    }
 
     for (let i = 0; i < Array.length; i++)
     {
         if(Array[i]%2 == 0 && Array[i]%3 == 0)
         {
-            Array[i] = {index:Array[i], label:"fizz buzz"};
+            Array.push({index:Array[i], label:"fizz buzz"});
         }
 
         else if(Array[i]%3 == 0)
         {
-            Array[i] = {index:Array[i], label:"buzz"};
+            Array.push({index:Array[i], label:"buzz"});
         }
 
         else if(Array[i]%2 == 0)
         {
-            Array[i] = {index:Array[i], label:"fizz"};
+            Array.push({index:Array[i], label:"fizz"});
         }
 
         else
         {
-            Array[i] = {index:Array[i]};
+            Array.push({index:Array[i]});
         }
     }
-
+    
     console.log(Array);
 
 </script>
